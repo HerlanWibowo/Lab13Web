@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+    margin : 10px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.ubah,
+.delete,
+.tambah {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.tambah {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+a:hover {
+    background-color: rgb(66, 66, 193);
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+ul.pagination li{display: inline;text-decoration: none;}
+
+ul.pagination li a {
+    color:black;
+    float:left;
+    padding:8px 16px;
+    text-decoration:none;
+    transition:background-color .3s;
+}
+ul.pagination li a.active {
+    background-color: #428bca;
+    color : white;
+}
+ul .pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}

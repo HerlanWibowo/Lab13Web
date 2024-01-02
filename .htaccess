@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /project-root/
+
+    # Jika file atau direktori sesuai dengan aturan sudah ada, lewati aturan rewrite
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Aturan untuk menangani routing
+    RewriteRule ^home/?$ module/home.php?page=home [QSA,NC,L]
+    RewriteRule ^index/(\d+)/?$ index.php?page=index&id=$1 [QSA,NC,L]
+</IfModule>
